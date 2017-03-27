@@ -1,0 +1,11 @@
+<div class="editable"
+  ng-init="editableStatus = false"
+	ng-transclude
+	contenteditable="{{ editableStatus }}"
+	ng-class = "{ edit: editableStatus }" >
+</div>
+
+<div class="editable">
+	<button ng-click="editableStatus = true" ng-show="!editableStatus">Edit</button>
+	<button ng-click="editableStatus = false" ng-show="editableStatus">Save Changes</button>
+</div>
